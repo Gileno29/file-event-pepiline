@@ -1,0 +1,79 @@
+{
+  "buckets": {
+    "test-bucket": {
+      "kind": "storage#bucket",
+      "id": "test-bucket",
+      "selfLink": "/storage/v1/b/test-bucket",
+      "projectNumber": "1234",
+      "name": "test-bucket",
+      "timeCreated": "2026-11-27T19:46:32.299044Z",
+      "updated": "2026-11-27T19:46:32.299044Z",
+      "metageneration": "1",
+      "iamConfiguration": {
+        "bucketPolicyOnly": {
+          "enabled": false
+        },
+        "uniformBucketLevelAccess": {
+          "enabled": false
+        }
+      },
+      "location": "US",
+      "locationType": "multi-region",
+      "storageClass": "STANDARD",
+      "etag": "CAE=",
+      "acl": [],
+      "defaultObjectAcl": [],
+      "softDeletePolicy": {
+        "retentionDurationSeconds": "604800",
+        "effectiveTime": "2026-11-27T19:46:32.299044Z"
+      }
+    }
+  },
+  "objects": {
+    "test-bucket": {
+      "blob1": {
+        "kind": "storage#object",
+        "id": "test-bucket/blob1/1795808792304139269",
+        "selfLink": "/storage/v1/b/test-bucket/o/blob1",
+        "name": "blob1",
+        "bucket": "test-bucket",
+        "generation": "1795808792304139269",
+        "metageneration": "2",
+        "contentType": "text/plain",
+        "timeCreated": "2026-11-27T19:46:32.304140Z",
+        "updated": "2026-11-27T19:46:32.304140Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2026-11-27T19:46:32.304140Z",
+        "size": "5",
+        "md5Hash": "WhBei51A4TKXgNYuoiZdig==",
+        "mediaLink": "http://localhost:8080/download/storage/v1/b/test-bucket/o/blob1?generation=1795808792304139269&alt=media",
+        "crc32c": "U/4fVQ==",
+        "etag": "WhBei51A4TKXgNYuoiZdig==",
+        "acl": []
+      },
+      "blob2": {
+        "kind": "storage#object",
+        "id": "test-bucket/blob2/1795808792306440373",
+        "selfLink": "/storage/v1/b/test-bucket/o/blob2",
+        "name": "blob2",
+        "bucket": "test-bucket",
+        "generation": "1795808792306440373",
+        "metageneration": "2",
+        "contentType": "text/plain",
+        "timeCreated": "2026-11-27T19:46:32.306442Z",
+        "updated": "2026-11-27T19:46:32.306442Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2026-11-27T19:46:32.306442Z",
+        "size": "5",
+        "md5Hash": "rQI0gpIFuQMxlrqBj3qHKw==",
+        "mediaLink": "http://localhost:8080/download/storage/v1/b/test-bucket/o/blob2?generation=1795808792306440373&alt=media",
+        "crc32c": "QK7soQ==",
+        "etag": "rQI0gpIFuQMxlrqBj3qHKw==",
+        "acl": []
+      }
+    }
+  },
+  "resumable": {},
+  "bucket_iam_policies": {},
+  "soft_deleted": {}
+}
