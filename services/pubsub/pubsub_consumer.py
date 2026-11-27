@@ -5,10 +5,6 @@ import logging
 
 from google.cloud import pubsub_v1
 
-from confluent_kafka import Producer
-
-from kafka.kafka_producer import KafkaProducer
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -16,20 +12,6 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
-
-
-
-
-# GCS client
-
-
-
-# Kafka producer
-producer = Producer({
-    "bootstrap.servers": KAFKA_BOOTSTRAP_SERVERS,
-    "client.id": "pubsub-consumer"
-})
-
 
 class PubsubConsumer():
     def __init__(
